@@ -1,0 +1,36 @@
+{
+  "name": "tymap",
+  "version": "1.0.0",
+  "description": "Simple object-to-object mapper",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "lint": "xo --fix",
+    "test": "jest --config jestconfig.json",
+    "prepare": "npm run build",
+    "prepublishOnly": "npm run test && npm run lint",
+    "preversion": "npm run lint"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ArsalanImamverdi/tyMap.git"
+  },
+  "keywords": [
+    "mapper",
+    "object-to-object",
+    "typescript"
+  ],
+  "author": "MohamadArsalan Imamverdi",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ArsalanImamverdi/tyMap/issues"
+  },
+  "homepage": "https://github.com/ArsalanImamverdi/tyMap#readme",
+  "devDependencies": {
+    "@types/jest": "^28.1.2",
+    "jest": "^28.1.1",
+    "ts-jest": "^28.0.5",
+    "typescript": "^4.7.4",
+    "xo": "^0.50.0"
+  }
+}
